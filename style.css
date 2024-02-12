@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+.section-hero {
+  padding: 0 10rem;
+  background-color: rgb(0, 60, 255);
+  height: 100vh;
+}
+.game-page-view {
+  padding: 2rem;
+
+}
+
+.logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-header {
+  margin-left: 1rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.logo {
+  width: 7rem;
+  height: 5rem;
+}
+.header-hero {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-ul {
+  margin-top: 1.7rem;
+  font-size: 1.3rem;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  color: #a79898;
+}
+.game-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-flex {
+  /* height: 80vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game-img {
+  /* margin-left: 4rem; */
+  border-radius: 3rem;
+  width: 25rem;
+  height: 30rem;
+}
+.description{
+  padding: 9rem 0;
+}
+.description-secoundry-header {
+  color: #a79898;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  display: inline-block;
+}
+.description-main-header {
+  margin-bottom: 6rem;
+  color: #fff;
+  font-size: 4rem;
+}
+.description-content {
+  /* background-color: red; */
+  font-size: small;
+  line-height: 1.2;
+  color: #a79898;
+}
+input {
+  padding: 0 1rem;
+  outline: none;
+  border-style: none;
+  border-radius: 2rem;
+  background-color: transparent;
+}
+.search-box {
+  border-style: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 14px;
+  color: #fff;
+  background-color: rgb(206, 40, 67);
+}
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 40rem;
+  border-radius: 2rem;
+  background-color: #fff;
+  margin-top: 4rem;
+}
+
+@media (max-width: 885px) {
+  .game-content {
+    flex-direction: column;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .section-hero {
+    padding: 0 10rem;
+    background-color: rgb(0, 60, 255);
+    /* height: 100vh; */
+  }
+  .description{
+    padding: 3rem 0;
+  }
+  .description-main-header {
+    margin-bottom: 4rem;
+    color: #fff;
+    font-size: 4rem;
+  }
+}
