@@ -14,7 +14,6 @@ html {
 }
 .game-page-view {
   padding: 2rem;
-
 }
 
 .logo-img {
@@ -36,13 +35,27 @@ html {
   display: flex;
   justify-content: space-between;
 }
+.sing-in {
+  background-color: rgb(206, 40, 67);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.nav-link:hover {
+  color: black;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: rgb(248, 236, 236);
+}
+.nav-link {
+  text-decoration: none;
+  color: #a79898;
+}
 .nav-ul {
   margin-top: 1.7rem;
   font-size: 1.3rem;
   list-style: none;
   display: flex;
   gap: 3rem;
-  color: #a79898;
 }
 .game-content {
   display: flex;
@@ -61,7 +74,7 @@ html {
   width: 25rem;
   height: 30rem;
 }
-.description{
+.description {
   padding: 9rem 0;
 }
 .description-secoundry-header {
@@ -71,7 +84,7 @@ html {
   display: inline-block;
 }
 .description-main-header {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   color: #fff;
   font-size: 4rem;
 }
@@ -89,6 +102,7 @@ input {
   background-color: transparent;
 }
 .search-box {
+  cursor: pointer;
   border-style: none;
   outline: none;
   border-radius: 2rem;
@@ -104,7 +118,14 @@ input {
   background-color: #fff;
   margin-top: 4rem;
 }
-
+@media (max-width: 566px) {
+  input {
+    padding: 0;
+  }
+  .search-box {
+    padding: 6px;
+  }
+}
 @media (max-width: 885px) {
   .game-content {
     flex-direction: column;
@@ -117,7 +138,7 @@ input {
     background-color: rgb(0, 60, 255);
     /* height: 100vh; */
   }
-  .description{
+  .description {
     padding: 3rem 0;
   }
   .description-main-header {
@@ -125,4 +146,12 @@ input {
     color: #fff;
     font-size: 4rem;
   }
+  .header-hero {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  /* .description {
+    padding: 9rem 0;
+  } */
 }
