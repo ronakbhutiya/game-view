@@ -7,16 +7,18 @@ html {
   font-family: sans-serif;
   font-size: 62.5%;
 }
+
 .section-hero {
-  
-  padding: 0 10rem;
+  display: flex;
+  justify-content: center;
+  /* padding: 0 10rem; */
   background-color: rgb(0, 60, 255);
-  height: 100vh;
+  /* height: 100vh; */
 }
 .game-page-view {
   padding: 2rem;
 }
-
+/* -------------------------header-nav-------------------------------- */
 .logo-img {
   display: flex;
   justify-content: center;
@@ -33,7 +35,7 @@ html {
   height: 5rem;
 }
 .header-hero {
-  padding-top: 3rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -59,10 +61,12 @@ html {
   display: flex;
   gap: 3rem;
 }
+/* -------------------------description-img------------------------------ */
 .game-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 3rem;
 }
 /* .img-flex::after{
   contain: 4;
@@ -70,6 +74,7 @@ html {
 } */
 .img-flex {
   /* height: 80vh; */
+  padding-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,6 +86,7 @@ html {
   height: 30rem;
 }
 .description {
+  max-width: 50rem;
   padding: 9rem 0;
 }
 .description-secoundry-header {
@@ -88,6 +94,7 @@ html {
   margin-bottom: 1.5rem;
   font-size: 2rem;
   display: inline-block;
+  text-align: center;
 }
 .description-main-header {
   margin-bottom: 4rem;
@@ -125,12 +132,44 @@ input {
   background-color: #fff;
   margin-top: 4rem;
 }
+.icon {
+  height: 30px;
+  width: 30px;
+  color: #e4d2d2;
+  background-color: rgb(0, 60, 255);
+  border-radius: 50%;
+}
+/* -------------------------------------game-about-------------------------------- */
+.game-about {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10rem;
+  margin-top: -3rem;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(209, 209, 209);
+  gap: 2rem;
+  flex-direction: column;
+  padding: 7rem;
+  border-radius: 2rem;
+}
+/* --------------------------media------------------------------ */
 @media (max-width: 529px) {
   input {
     padding: 0;
   }
   .search-box {
     padding: 6px;
+  }
+}
+@media (max-width: 758px) {
+  .game-about {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
   }
 }
 @media (max-width: 885px) {
@@ -142,12 +181,8 @@ input {
   }
   .section-hero {
     padding: 0 10rem;
-    background-color: rgb(0, 60, 255);
-    height: 150vh;
   }
-  .description {
-    padding: 3rem 0;
-  }
+
   .description-main-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -160,10 +195,8 @@ input {
     justify-content: center;
   }
   .description {
-    padding: 6rem 0;
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
