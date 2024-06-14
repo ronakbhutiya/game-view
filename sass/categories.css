@@ -1,0 +1,32 @@
+.section-categories {
+  margin-bottom: 10rem;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: var(--color--white);
+  gap: 2rem;
+}
+
+.categories-box {
+  background-color: var(--color--blue--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border--redius);
+  cursor: pointer;
+}
+
+.categories-box p {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+}
+
+.categories-box img {
+  width: 100%;
+  border-radius: var(--border--redius);
+}/*# sourceMappingURL=categories.css.map */

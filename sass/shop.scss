@@ -1,0 +1,103 @@
+.section__shop {
+  margin: 16rem 0;
+}
+.shop__heading-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-heding-1 {
+  font-size: 1.5rem;
+  color: var(--color--orange--dark);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.shop__heading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.shop__btn {
+  font-size: 1.4rem;
+  padding: 1.5rem 3rem;
+  color: var(--color--white);
+  font-weight: 700;
+  border-radius: var(--border--redius);
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color--orange--dark);
+  &:hover {
+    background-color: var(--color--blue);
+  }
+}
+.tranding__img {
+  position: relative;
+}
+.tranding__img a img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border--redius);
+}
+.tranding__img .price-1 {
+  position: absolute;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 1rem;
+  padding: 0.4rem 1.5rem;
+  background-color: var(--color--blue);
+  font-size: 1.7rem;
+  color: var(--color--white);
+  font-weight: 600;
+}
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.3rem;
+  margin: 8rem 0;
+}
+.shop__box {
+  border-radius: var(--border--redius);
+  background-color: #eeee;
+  transition: all 0.3s ease-in-out;
+}
+.shop__box:hover .shopping-heading {
+  color: var(--color--blue);
+}
+.shop__box:hover .shopping {
+  background-color: var(--color--blue);
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+.shopping {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color--orange--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  border-radius: 50%;
+}
+.shopping-heading {
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in-out;
+}
+.fa-bag-shopping {
+  color: var(--color--white);
+  font-size: 2rem;
+}
+.categry {
+  font-size: 1.4rem;
+  color: #7a7a7a;
+}
