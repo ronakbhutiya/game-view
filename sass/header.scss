@@ -43,11 +43,17 @@
 .header__text__box {
   color: var(--color--white);
   width: 50%;
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+  }
   // align-self: baseline;
 }
 .header__text__box .heading {
   font-size: 2rem;
   text-transform: uppercase;
+  @media only screen and (max-width: $bp-large) {
+    text-align: center;
+  }
 }
 .header__text__box .header__primary {
   font-size: 4.8rem;
@@ -55,6 +61,9 @@
   line-height: 1.2;
   margin-top: 2rem;
   position: relative;
+  @media only screen and (max-width: $bp-large) {
+    text-align: center;
+  }
 }
 .header__text__box .header__primary span {
   display: block;
@@ -62,12 +71,19 @@
 .header__text__box .header__text {
   font-size: 1.4rem;
   margin-bottom: 7rem;
+  @media only screen and (max-width: $bp-large) {
+    text-align: center;
+  }
 }
 .banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 6rem;
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+    gap: 5rem;
+  }
 }
 .caption-dec {
   display: block;
@@ -76,10 +92,17 @@
 }
 .right-img {
   position: relative;
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+  }
 }
 .game-img {
   width: 90%;
   border-radius: var(--border--redius);
+
+  @media only screen and (max-width: $bp-large) {
+    width: 100%;
+  }
 }
 .price {
   position: absolute;
@@ -112,6 +135,10 @@
   background-color: var(--color--white);
   border-radius: var(--border--redius);
   width: 80%;
+  @media only screen and (max-width: $bp-large) {
+    text-align: center;
+    width: 100%;
+  }
 }
 .btn__box .input {
   width: 100%;
@@ -146,6 +173,13 @@
   gap: 3rem;
   margin-top: -9rem;
   margin-bottom: 9rem;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .feature_box {
   background-color: var(--color--white);
@@ -179,4 +213,9 @@
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: $bp-small) {
+  .logo {
+    width: 20%;
+  }
 }
