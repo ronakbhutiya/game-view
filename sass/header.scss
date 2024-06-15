@@ -10,12 +10,19 @@
   align-items: center;
   justify-content: space-between;
   padding: 4rem 0;
+  position: relative;
 }
 .nav__ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
+  @media only screen and (max-width: $bp-small) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .nav__list {
   list-style: none;
@@ -216,6 +223,7 @@
 }
 @media (max-width: $bp-small) {
   .logo {
-    width: 20%;
+    width: 30%;
+    z-index: 999;
   }
 }

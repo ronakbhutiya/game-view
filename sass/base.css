@@ -14,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 40.63em) {
   html {
@@ -28,10 +29,10 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 2rem;
 }/*# sourceMappingURL=base.css.map */
