@@ -679,6 +679,7 @@ body {
 
 .cta-form {
   display: flex;
+  justify-content: space-between;
   border-radius: var(--border--redius);
   background-color: var(--color--white);
   margin-top: 3rem;
