@@ -744,7 +744,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .navigation {
-    height: 100vh;
+    height: 40vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -752,7 +752,7 @@ body {
     display: flex;
     visibility: hidden;
     pointer-events: none;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     justify-content: center;
     align-items: center;
     background-color: var(--color--blue);
@@ -771,7 +771,7 @@ body {
   .nav .navigation {
     pointer-events: auto;
     visibility: visible;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
