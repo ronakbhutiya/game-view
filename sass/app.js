@@ -12,3 +12,21 @@ mobile__nav.addEventListener("click", function () {
     mobile__nav.style.transform = "rotate(360deg)";
   }
 });
+
+//sticky navbar
+
+const section__hero = document.querySelector(".section__hero");
+const observer = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    ent.isIntersecting === false
+      ? nav__header.classList.add("sticky")
+      : nav__header.classList.remove("sticky");
+  },
+  {
+    root: null,
+    rootMargin: "",
+    threshold: "",
+  }
+);
+observer.observe(section__hero);

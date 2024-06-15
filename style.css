@@ -718,6 +718,19 @@ body {
   padding-top: 5rem;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--color--blue);
+  z-index: 111;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 2rem 0 rgba(var(--color--blue), 0.8);
+}
+
 .mobile__nav-btn {
   display: none;
   cursor: pointer;
