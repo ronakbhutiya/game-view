@@ -35,6 +35,7 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .section__hero {
@@ -719,6 +720,7 @@ body {
   z-index: 1222;
   border-radius: 1rem;
   z-index: 9999;
+  transition: all 0.3s ease-in-out;
 }
 @media only screen and (max-width: 56.25em) {
   .mobile__nav-btn {
