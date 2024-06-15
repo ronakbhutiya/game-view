@@ -1,6 +1,6 @@
 .most-play {
   background-color: #eeee;
-  padding: 10rem 0;
+  padding: 10rem 2rem;
   border-radius: 15rem;
   margin-bottom: 10rem;
 }
@@ -11,6 +11,7 @@
 
   @media only screen and (max-width: $bp-largest) {
     grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
   }
 
   @media only screen and (max-width: $bp-smallest) {
