@@ -27,6 +27,7 @@
   border-radius: var(--border--redius);
   position: relative;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .most-play-game-box:hover .most-play-btn {
   background-color: var(--color--blue--dark);
@@ -50,6 +51,8 @@
   text-transform: uppercase;
   color: var(--color--white);
   border: none;
+  cursor: pointer;
+
   outline: none;
   border-radius: var(--border--redius);
   font-weight: 700;
