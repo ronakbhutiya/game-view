@@ -453,6 +453,11 @@ body {
   border-radius: 15rem;
   margin-bottom: 10rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .most-play {
+    background-color: #fff;
+  }
+}
 
 .most-play-game {
   display: grid;

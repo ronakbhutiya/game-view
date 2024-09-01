@@ -3,6 +3,9 @@
   padding: 10rem 2rem;
   border-radius: 15rem;
   margin-bottom: 10rem;
+  @media only screen and (max-width: $bp-small) {
+    background-color: #fff;
+  }
 }
 .most-play-game {
   display: grid;
